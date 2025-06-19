@@ -5,6 +5,6 @@ This is my Resume Website
 
 ## Technologies used
 
-- HTMl
+- HTML
 - CSS
 - Javascript
