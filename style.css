@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;       
+    top: 0;                  
+    width: 100%;              
+    z-index: 1000;           
+}
+
+header .logo h1 {
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: .3s;
+}
+
+header ul li a:hover {
+    color: rgb(9, 116, 238);
+    cursor: pointer;
+}
+
+section {
+    padding: 50px;
+}
+
+#introduction {
+    background-color: rgba(11, 19, 43, 0.8);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.intro-img img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 15px;
+    flex: 1 1 300px;
+    margin-left: 17px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+.about-me {
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 700px;
+    margin-left: 340px;
+    margin-top: -300px;
+    padding: 30px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.education {
+    border-radius: 15px;
+    background-color: whitesmoke;
+    width: 700px;
+    margin-left: 340px;
+    margin-top: 10px;
+    padding: 30px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.education h2 {
+    font-size: 27px;
+}
+
+.about-me,
+.education {
+    flex: 1 1 300px;
+    margin: 15px;
+    width: auto;
+}
+
+
+#skills {
+    width: 100%;
+    background: #101010;
+    padding: 70px 0px;
+}
+
+#skills h2 {
+    color: white;
+    font-size: 50px;
+    width: 500px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+h5 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.par p {
+    color: whitesmoke;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.card .button {
+    background-color: rgb(9, 116, 238);
+    color: white;
+    padding: 9px 22px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid;
+    transition: .4s;
+}
+
+.card .button:hover {
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#contacts {
+    height: 300px;
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .about-me,
+    .education {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    main img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #skills h2 {
+        font-size: 35px;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header ul li a {
+        font-size: 1em;
+    }
+
+    .about-me,
+    .education {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #skills h2 {
+        font-size: 30px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me,
+    .education {
+        width: 90%;
+        font-size: 16px;
+    }
+}
+
